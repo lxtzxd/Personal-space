@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>应用检测</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/icon.png" style="margin-left: 50px;">
+            <img src="images/icon-text.png">
+            <img class="blank"/>
+        </header>
+        <div class="proBar">
+            <div id="step1" class="step now"><span>1</span></div>
+            <div id="step2" class="step"><span>2</span></div>
+            <div id="step3" class="step"><span>3</span></div>
+        </div>
+        <div class="proBar1">
+            <span>连接手机</span>
+            <span>整机检测</span>
+            <span>评估报告</span>
+        </div>
+        <div class="logo">给您手机一次全面体检，让安全危险无处遁形</div>
+        <main>
+            <div class="left">
+                <div class="app">
+                        <div class="safe fin">
+                            <div class="per">
+                            <span class="chart" data-percent="75">
+                              <span class="percent"><img src="images/caiwu.png"/></span>
+                            </span>
+                            </div>
+                            <div class="cate">支付类</div>
+                            <div class="desc"><span style="color: #FF6060;font-size: 14px">2</span>款恶意应用</div>
+                            <div class="desc"><span style="color: #68CC6C">2</span>款合法应用</div>
+                        </div>
+                        <div class="safe tel">
+                            <div class="per">
+                            <span class="chart" data-percent="75">
+                              <span class="percent"><img src="images/tel.png"/></span>
+                            </span>
+                            </div>
+                            <div class="cate">通讯类</div>
+                            <div class="desc"><span style="color: #FF6060">2</span>款恶意应用</div>
+                            <div class="desc"><span style="color: #68CC6C">2</span>款合法应用</div>
+                        </div>
+                        <div class="safe tool">
+                            <div class="per">
+                            <span class="chart" data-percent="75">
+                              <span class="percent"><img src="images/tool.png"/></span>
+                            </span>
+                            </div>
+                            <div class="cate">工具类</div>
+                            <div class="desc"><span style="color: #FF6060">2</span>款恶意应用</div>
+                            <div class="desc"><span style="color: #68CC6C">2</span>款合法应用</div>
+                        </div>
+                        <div class="safe other">
+                            <div class="per">
+                            <span class="chart" data-percent="75">
+                              <span class="percent"><img src="images/other.png"/></span>
+                            </span>
+                            </div>
+                            <div class="cate">其他</div>
+                            <div class="desc"><span style="color: #FF6060">2</span>款恶意应用</div>
+                            <div class="desc"><span style="color: #68CC6C">2</span>款合法应用</div>
+                        </div>
+                        <div class="scan">
+                            <img src="images/roundlayer.png">
+                            <img class="round" src="images/round.png">
+                        </div>
+                </div>
+                <div class="badApp">
+                    <img src="images/badapp.png">
+                    <p>恶意应用</p>
+                </div>
+                <div class="bar">
+                    <img src="images/weixin.png">
+                    <span class="name">微信</span>
+                    <span class="packName">com.wechat</span>
+                    <span class="count">特征计算中. . . . . . .</span>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="score">
+                    <div class="num"></div>
+                    <div class="detail">
+                        <button class="btn1">更多</button>
+                        <button class="btn2">打印</button>
+                        <div class="des">
+                            <label>品牌：</label><span>华为</span><br/>
+                            <label>型号：</label><span>P6</span><br/>
+                            <label>操作系统：</label><span>Android</span><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="process">
+                    <div class="line-bar"></div>
+                    <div class="test">
+                        <div class="sysTest">
+                            <p>系统检测：</p>
+                            <label >对手机操作系统检测，预警系统性漏洞和风险</label><br/>
+                            <label>系统版本：</label><span>4.4.2</span><br/>
+                            <label>当前状态：</label><span>检测中</span><br/>
+                            <ul>
+                                <li>Libksba 安全漏洞</li>
+                                <li>IBM Rational Team Concert HTML注入漏洞</li>
+                                <li>Libksba 安全漏洞</li>
+                                <li>IBM Rational Team Concert HTML注入漏洞</li>
+                                <div class="arrow1">
+                                    <img src="images/arrowGreen.png">
+                                </div>
+                                <img class="rt" src="images/right-top.png"/>
+                                <img class="ld" src="images/left-down.png"/>
+                            </ul>
+                        </div>
+
+                        <div class="appTest">
+                            <p>应用检测：</p>
+                            <label >对手机中的应用进行全面扫描，检测恶意应用</label><br/>
+                            <label>当前状态：</label><span>检测中</span><br/>
+                            <span>共<span>20</span>个应用，正在扫描第<span>6</span>个</span><br/>
+                            <div class="table">
+                                <table rules="none">
+                                    <thead>
+                                    <tr>
+                                        <th>名称</th>
+                                        <th>包名</th>
+                                        <th>风险等级</th>
+                                        <th>种类</th>
+                                        <th>恶意类型</th>
+                                        <th>应用分类</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>夜色TV</th>
+                                        <th>com.yese</th>
+                                        <th>木马</th>
+                                        <th>高</th>
+                                        <th>扣费</th>
+                                        <th>其他</th>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="arrow2">
+                                    <img src="images/arrowWhite.png">
+                                </div>
+                                <div class="clean">一键清除恶意应用</div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/easypiechart.js"></script>
+    <script type="text/javascript" src="js/jquery.ez-bg-resize.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

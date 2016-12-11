@@ -1,0 +1,208 @@
+/*默认设置*/
+
+html, body, div, span,h1, h2, h3, h4, h5, h6, p, label,canvas,figcaption, figure{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html {
+	background-image: url(bg.jpg);
+}
+body{
+	overflow-x: auto;
+	margin-top: 10px;
+	color: #76818D;
+	text-shadow: 1px 1px 0 white;
+}
+input,button,output{
+	outline: none;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 0 white;
+}
+canvas,figure,label{
+	display: block;
+	cursor: pointer;
+}
+
+/*主体样式设置*/
+#container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*生成代码按钮*/
+.geneCode{
+	position: absolute;
+	z-index: 99;
+	width:120px;
+	height: 40px;
+	right:60px;
+	top:30px;
+	background: #DDDDDD;
+	border: none;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+}
+
+/*头部样式*/
+.header{
+	position: absolute;
+	width:100%;
+	text-align: center;
+}
+h1 {
+	padding-top: 30px;
+	font: bold 40px Consolas,"Andale Mono",monospace ;
+}
+
+/*清楚内部元素浮动*/
+.prePart:after {
+	content:"."; display:block; height:0; visibility:hidden; clear:both;
+}
+
+/*绘图部分*/
+.graph {
+	float: left;
+	margin-left: 30px;
+}
+figure {
+	position: relative;
+	width: 253px;
+	margin-left: 35px;
+}
+figure:before,
+figure:after{
+	position:absolute;
+	font: bold 20px Consolas,"Andale Mono",monospace ;
+}
+figure:before{
+	left:-95px;
+	top: 240px;
+	content: 'progression(%)';
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+figure:after{
+	left:90px;
+	top: 395px;
+	content: 'time(%)';
+}
+
+/*参数部分*/
+.parameter {
+	position: absolute;
+    margin-top: 130px;
+	left: 400px;
+}
+#p1x,#p1y{
+	color: #FF0088;
+}
+#p2x,#p2y{
+	color:#00AABB;
+}
+label {
+	margin-bottom: 20px;
+}
+
+label .text,code,output{
+	font: bold 25px Consolas,"Andale Mono",monospace;
+}
+
+/*时间滑块*/
+input[type="range"] {
+	width: 300px;
+	height:25px;
+	overflow: hidden;
+	background: #DDDDDD;
+	border-radius: 15px;
+	-webkit-appearance: none;
+	box-shadow: 0 10px 0 -12px rgba(0, 0, 0, 0.4), inset 0 0 0 -1px rgba(0, 0, 0, 0.2), 0 -10px 10px -1px rgba(255, 255, 255, 0.6), inset 0 3px 0 -1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.8), inset 0 20px 20px 0 rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+/*谷歌浏览器显示滑块时的样式*/
+input[type="range"]::-webkit-slider-thumb {
+	 height: 22px;
+	 width: 23px;
+	background-color: ghostwhite;
+	 -webkit-appearance: none;
+	 cursor: default;
+	 border-radius: 50%;
+	 -webkit-border:1px solid #76818D;
+	 -webkit-box-shadow: 0 -1px 1px #76818D inset;
+ }
+
+/*测试所设置参数的动画效果*/
+.testButton  {
+	width: 100px;
+	padding: 5px;
+	margin-right: 10px;
+	font-size: 15px;
+	background: #DDDDDD;
+	border: none;
+	text-transform: capitalize;
+	-webkit-border-radius: 50px;
+	   -moz-border-radius: 50px;
+	        border-radius: 50px;
+	box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+}
+
+ /*点击时切换样式用*/
+ .box-shadow {
+	box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.3), inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.6);
+}
+
+ /*展示动画效果的滑块*/
+#box {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	margin-top: 3px;
+	background:#A7ADB5 ;
+	opacity: 1;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.3), inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.6);
+}
+
+/*切换这些样式来展示动画*/
+#box.left {
+	left: 480px;
+}
+#box.opacity {
+	opacity: 0;
+}
+#box.width {
+	width: 580px;
+}
+#box.height {
+	height: 560px;
+}
+#segment {
+	position: absolute;
+	display: none;
+	top:510px;
+	left:100px;
+}
+
+/*弹出的css3动画代码*/
+#segment.display{
+	display: block;
+	background-image: url(bg.jpg);
+}
+p {
+	width:800px;
+	padding:10px 0 10px 20px;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 10px;
+	box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.3), inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.6);
+}

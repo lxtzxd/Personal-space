@@ -1,0 +1,47 @@
+<!doctype html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>贝塞尔曲线</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="container">
+		<button class="geneCode" id="codeButton">Check Code</button>
+		<header class="header">
+			<h1>CSS3 Animation</h1>
+		</header>
+		<div class="prePart">
+			<div class="graph">
+				<figure>
+					<canvas id="curves" width="253" height="500"></canvas>
+				</figure>
+			</div>
+
+			<div class="parameter">
+				<label ><span class="text">Preview&nbsp;:</span>
+					 <code id="para"></code>
+				</label>
+				<label for="time"><span class="text">Duration:</span>
+					<input id="time" type="range"  pattern="\d*\.?\d+" step="0.1" max="5" min="0.1" value="1">
+					<output id="duration">1000ms</output>
+				</label>
+				<label ><span class="text">Effects&nbsp;:</span>
+					<input type="button" name="left"  id="left" class="testButton" value="left">
+					<input type="button" name="width" id="width" class="testButton" value="width" >
+					<input type="button" name="height" id="height" class="testButton" value="height" >
+					<input type="button" name="opacity" id="opacity" class="testButton" value="opacity" >
+				</label>
+				<div id="box"></div>
+			</div>
+		</div>
+
+		<div id="segment">
+			<code id="codePart"></code>
+		</div>
+
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
